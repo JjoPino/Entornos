@@ -1,0 +1,16 @@
+<!ELEMENT ParteDTD (Continente+, Pais+)>
+<!ELEMENT Continente (Nombre)>
+<!ELEMENT Nombre (#PCDATA)>
+<!ATTLIST Continente id ID #REQUIRED>
+<!ELEMENT Pais (NombreP,Extension,Poblacion,Bandera,Idiomas,Ciudades+)>
+<!ATTLIST Pais ref IDREF #REQUIRED>
+<!ELEMENT NombreP (#PCDATA)>
+<!ELEMENT Extension (#PCDATA)>
+<!ELEMENT Poblacion (#PCDATA)>
+<!ELEMENT Bandera (#PCDATA)>
+<!ELEMENT Idiomas (#PCDATA)>
+<!ELEMENT Ciudades (Ciudad+)>
+<!ELEMENT Ciudad (NombreC+, PoblacionC+)>
+<!ATTLIST Ciudad escapital CDATA "si">
+<!ELEMENT NombreC (#PCDATA)>
+<!ELEMENT PoblacionC (#PCDATA)>
